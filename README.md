@@ -4,6 +4,7 @@
  本项目是基于telegraf-1.18.0 修改的 
  目前只有  mysql 和 redis  的input 增加了 Swith_data_type 参数
 
+```
 [root@data-backup telegraf-1.18.0]# ./telegraf  --usage redis
 
 # Read metrics from one or many redis servers
@@ -41,3 +42,4 @@
   #     当收集不同云厂商metric存入相同influxdb时，由于数据类型不通，
   #     可能有些云厂商的metric会发生写入冲突,无法存入采集的metric，通过强制转换metric数据类型能临时解决此类问题
 
+```
